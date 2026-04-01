@@ -4,14 +4,14 @@ kibot:
 outputs:
   - name: "Export_Schema_PDF"
     type: pdf_sch_print
-    dir: "Schema"
+    dir: "Export/Schema" # <-- Modifié pour inclure le dossier parent Export
     options:
-      output: "schema_complet.pdf" # Nom de fichier fixe
+      output: "schema_complet.pdf" 
 
   - name: "Rendu_PCB_Top"
     type: pcbdraw
-    dir: "Visuels"
+    dir: "Export/Visuels" # <-- Modifié pour inclure le dossier parent Export
     options:
       format: jpg
-      output: "pcb_preview.jpg"   # Nom de fichier fixe
+      output: "pcb_preview.jpg"   
       show_components: none
