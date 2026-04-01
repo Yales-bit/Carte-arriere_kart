@@ -1,13 +1,24 @@
-# Fichiers de sauvegarde et temporaires
+
+# Fichiers de sauvegarde et temporaires classiques
 *.bak
+*.bck
 *.kicad_pcb-bak
 *.kicad_sch-bak
 *~
 _autosave-*
 *.lck
 
+# Dossiers de sauvegardes automatiques KiCad (KiCad 6+)
+*-backups/
+
+# Préférences locales de l'interface utilisateur (optionnel)
+*.kicad_prl
+
 # Dossiers de sortie (Génération de fabrication)
-fp-info-cache
+fp-info-cache/
 /plots/
 /gerbers/
 /output/
+
+# Dossier d'export de l'intégration continue (KiBot)
+/Export/
