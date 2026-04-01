@@ -3,14 +3,15 @@ kibot:
 
 outputs:
   - name: "Export_Schema_PDF"
-    comment: "Génère le PDF du schéma"
     type: pdf_sch_print
-    dir: "Export/Schema"
+    dir: "Schema"
+    options:
+      output: "schema_complet.pdf" # Nom de fichier fixe
 
   - name: "Rendu_PCB_Top"
-    comment: "Génère une image du dessus du PCB"
     type: pcbdraw
-    dir: "Export/Visuels"
+    dir: "Visuels"
     options:
       format: jpg
+      output: "pcb_preview.jpg"   # Nom de fichier fixe
       show_components: none
