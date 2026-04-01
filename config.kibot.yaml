@@ -1,0 +1,16 @@
+kibot:
+  version: 1
+
+outputs:
+  - name: "Export_Schema_PDF"
+    comment: "Génère le PDF du schéma"
+    type: pdf_sch_print
+    dir: "Export/Schema"
+
+  - name: "Rendu_PCB_Top"
+    comment: "Génère une image du dessus du PCB"
+    type: pcbdraw
+    dir: "Export/Visuels"
+    options:
+      format: jpg
+      show_components: none
