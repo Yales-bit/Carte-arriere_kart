@@ -1,0 +1,13 @@
+# Fichiers de sauvegarde et temporaires
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*~
+_autosave-*
+*.lck
+
+# Dossiers de sortie (Génération de fabrication)
+fp-info-cache
+/plots/
+/gerbers/
+/output/

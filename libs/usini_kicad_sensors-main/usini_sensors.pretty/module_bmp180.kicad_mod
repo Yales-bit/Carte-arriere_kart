@@ -1,0 +1,231 @@
+(footprint "module_bmp180"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 2.54 -0.254 90)
+		(layer "F.SilkS")
+		(uuid "0df639e9-3346-4865-b402-6bf897ec0ef6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "module_bmp180"
+		(at 4.318 2.54 0)
+		(layer "F.Fab")
+		(uuid "408874f8-19fe-4e7e-8236-dabebb73c78d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6a38dd2a-c7f0-476f-b49c-0b30ea921bd0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "24216429-c5e4-4366-b197-b6faca8641d4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start 0 -17.78)
+		(end 25.4 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "8a1a2665-fb6d-4a07-87f5-830835dcdc04")
+	)
+	(fp_text user "SDI"
+		(at 17.78 -6.096 90)
+		(layer "F.SilkS")
+		(uuid "3e1b7370-dec5-42e2-9274-d3a65d7cb18d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "3.3"
+		(at 7.62 -6.096 90)
+		(layer "F.SilkS")
+		(uuid "449b5b25-6b96-480e-9e3d-5129a696a9e0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "SDO"
+		(at 15.24 -6.096 90)
+		(layer "F.SilkS")
+		(uuid "6ac0ee31-7a32-440a-8fc0-313333d7a394")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "SCK"
+		(at 12.7 -6.096 90)
+		(layer "F.SilkS")
+		(uuid "85f944d5-8b24-469f-96e2-fc05a6a2485b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "VCC"
+		(at 5.08 -6.096 90)
+		(layer "F.SilkS")
+		(uuid "98abd128-4436-44f2-8235-dfd74a4f5308")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "GND"
+		(at 10.16 -6.096 90)
+		(layer "F.SilkS")
+		(uuid "a59b86cf-1795-4cdb-9a4a-89c75f65217d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "CS"
+		(at 20.32 -6.096 90)
+		(layer "F.SilkS")
+		(uuid "d46114aa-bd9b-4aa9-be3d-9383e42b3c89")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 5.08 -2.54 90)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0c06dc6f-539a-474c-b4dd-30a20143299d")
+	)
+	(pad "2" thru_hole circle
+		(at 7.62 -2.54 90)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "89f4d2ca-99f6-4fa0-8043-d0e81848ec2a")
+	)
+	(pad "3" thru_hole circle
+		(at 10.16 -2.54 90)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6fe4edbe-5a20-467b-ae3b-0cf3ccd839b1")
+	)
+	(pad "4" thru_hole circle
+		(at 12.7 -2.54 90)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fc5e915e-069e-4e53-8e30-e82254752a68")
+	)
+	(pad "5" thru_hole circle
+		(at 15.24 -2.54 90)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dab27c87-fbb8-4028-a169-7e8f9008844c")
+	)
+	(pad "6" thru_hole circle
+		(at 17.78 -2.54 90)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0d9a18fa-ed5a-4cad-899d-c443b449593f")
+	)
+	(pad "7" thru_hole circle
+		(at 20.32 -2.54 90)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cb4a172e-163a-46df-95fd-68db2b0a3df1")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/usini_sensors.pretty/bmp180.step"
+		(offset
+			(xyz 7 6.5 12.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 180 90)
+		)
+	)
+	(model "${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x05_P2.54mm_Vertical.step"
+		(offset
+			(xyz 0 10.2 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KISYS3DMOD}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x05_P2.54mm_Vertical.step"
+		(offset
+			(xyz 0 0 9.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -180 0 0)
+		)
+	)
+)
