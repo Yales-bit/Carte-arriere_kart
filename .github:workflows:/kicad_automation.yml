@@ -1,25 +1,29 @@
-name: "KiCad Automation"
+name: "KiCad Visuals Export"
 
 on:
   push:
     branches: [ main ]
 
 jobs:
-  Fabrication:
+  Export-and-Deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Important pour que l'action puisse publier
     steps:
       - name: Checkout du projet
         uses: actions/checkout@v4
 
-      - name: Génération des exports avec KiBot
-        uses: INTI-CMNB/KiBot@v2_k9 # Version spécifique pour KiCad 9
+      - name: Génération des visuels avec KiBot
+        uses: INTI-CMNB/KiBot@v2_k9
         with:
           config: config.kibot.yaml
-          schema: 'Carte_arriere_acquisition.kicad_sch' # Remplacez par votre nom de fichier
-          board: 'Carte_arriere_acquisition.kicad_pcb'   # Remplacez par votre nom de fichier
+          schema: 'Carte_arriere_acquisition.kicad_sch'
+          board: 'Carte_arriere_acquisition.kicad_pcb'
 
-      - name: Sauvegarder les fichiers générés
-        uses: actions/upload-artifact@v4
+      - name: Déployer les visuels sur la branche assets
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          name: Exports-KiCad
-          path: Export/
+          branch: assets        # La branche de destination
+          folder: Export/       # Le dossier généré par KiBot
+          target-folder: images # Dossier de stockage dans la branche assets
+          commit-message: "Mise à jour automatique des visuels (KiCad 9)"
