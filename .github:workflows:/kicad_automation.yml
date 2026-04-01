@@ -1,0 +1,25 @@
+name: "KiCad Automation"
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  Fabrication:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout du projet
+        uses: actions/checkout@v4
+
+      - name: Génération des exports avec KiBot
+        uses: INTI-CMNB/KiBot@v2_k9 # Version spécifique pour KiCad 9
+        with:
+          config: config.kibot.yaml
+          schema: 'Carte_arriere_acquisition.kicad_sch' # Remplacez par votre nom de fichier
+          board: 'Carte_arriere_acquisition.kicad_pcb'   # Remplacez par votre nom de fichier
+
+      - name: Sauvegarder les fichiers générés
+        uses: actions/upload-artifact@v4
+        with:
+          name: Exports-KiCad
+          path: Export/
